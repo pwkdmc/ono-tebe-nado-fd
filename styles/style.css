@@ -1,1 +1,79 @@
-/* место для вашего кода */
+.header {
+    height: 293px;
+    padding: 0 50px;
+}
+
+.cover {
+    height: 757px;
+    padding: 0 50px;
+    background-image: url(../images/cover.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.lots {
+    height: 723px;
+    margin: 180px 24px 120px;
+}
+
+.cards {
+    display: flex;
+}
+
+.card {
+    width: 334px;
+    height: 596px;
+}
+
+.card-film {
+    background-image: url(../images/card-lot-01.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-book {
+    background-image: url(../images/card-lot-02.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.card-picture {
+    background-image: url(../images/card-lot-03.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.about {
+    height: 595px;
+    margin: 120px 24px 180px;
+}
+
+.footer {
+    height: 180px;
+    padding: 0 50px;
+}
+
+.logo {
+    font-size: 0;
+}
+
+.logo-image {
+    font-size: 0;
+    width: 148px;
+}
+
+.about-logo-circle {
+    width: 240px;
+    font-size: 0;
+    background-color: #000;
+    border-radius: 50%;
+    padding: 64px 45.52px 62px 46.48px;
+}
+
+.about-logo-image {
+    width: 148px;
+}
+
+.socials-image {
+    width: 48px;
+}
