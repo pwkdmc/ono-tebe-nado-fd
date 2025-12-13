@@ -2,8 +2,7 @@
   display: grid;
   grid-template-columns: 1fr min-content 1fr;
   align-items: center;
-  min-height: 293px;
-  padding: 0 50px 5px;
+  padding: 92px 50px 96px;
 }
 
 .header__links-list {
@@ -44,9 +43,6 @@
 }
 
 .header__logo-image {
-  position: relative;
-  top: 0.5px;
-  left: 2px;
   width: 148px;
   font-size: 0;
 }
@@ -73,21 +69,11 @@
 }
 
 .address__text_address {
-  position: relative;
-  top: 0.5px;
-  left: 1px;
   text-decoration: none;
-}
-
-.address__text_phone-number {
-  position: relative;
-  top: 0.5px;
-  left: 0.5px;
 }
 
 .cover {
   position: relative;
-  z-index: -2;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -100,15 +86,14 @@
 
 .overlay {
   position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
+  inset: 0;
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
 .cover__title {
+  z-index: 1;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -141,6 +126,7 @@
 }
 
 .cover__description {
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -167,7 +153,6 @@
 }
 
 .lots {
-  min-height: 723px;
   margin: 180px 24px 120px;
 }
 
@@ -184,17 +169,6 @@
   flex-wrap: wrap;
   gap: 25px;
   list-style-type: none;
-}
-
-.lots__card-list-item {
-  position: relative;
-  z-index: -2;
-  max-width: 334px;
-  min-height: 596px;
-  padding: 48px 40px;
-  color: white;
-  background-position: center;
-  background-size: cover;
 }
 
 .card_type_film {
@@ -215,13 +189,21 @@
 }
 
 .card {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  max-width: 334px;
   height: 100%;
+  min-height: 596px;
+  padding: 48px 40px;
+  color: white;
+  background-position: center;
+  background-size: cover;
 }
 
 .card__title {
+  z-index: 1;
   font-weight: 700;
   font-size: 22px;
   line-height: 120%;
@@ -232,6 +214,7 @@
 }
 
 .card__text {
+  z-index: 1;
   font-weight: 400;
   font-size: 20px;
   line-height: 120%;
@@ -252,12 +235,12 @@
 .about {
   display: grid;
   grid-template-columns: 334px auto;
-  min-height: 595px;
   margin: 120px 24px 180px;
 }
 
 .about__logo {
   justify-self: center;
+  align-self: start;
   max-width: 240px;
   min-height: 240px;
   margin-top: 35px;
@@ -293,8 +276,7 @@
 .footer {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  min-height: 180px;
-  padding: 0 50px;
+  padding: 0 50px 82px;
 }
 
 .footer__address {
